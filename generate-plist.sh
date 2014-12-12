@@ -23,7 +23,7 @@
 # 
 # 
 # 
-# generate.sh
+# generate-plist.sh
 # iOS Enterprise Distribution P-List Generator
 #
 # If any of the required arguments are not passed, a prompt will be provided to enter them.
@@ -36,7 +36,7 @@
 # 5: output-file (ex. ~/MyApp.plist) [Optional: By default, outputs to the console.]
 # 
 # Example:
-# ./generate.sh "My Awesome App" 1.0.0 com.kylewbanks.AwesomeApp https://kylewbanks.com/AwesomeApp.ipa ~/MyApp.plist
+# ./generate-plist.sh "My Awesome App" 1.0.0 com.kylewbanks.AwesomeApp https://kylewbanks.com/AwesomeApp.ipa ~/MyApp.plist
 
 # Capture command line args, or prompt for input if not set
 TITLE=$1

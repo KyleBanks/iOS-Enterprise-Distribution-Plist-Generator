@@ -17,13 +17,13 @@ All options can be provided directly when running the script. If the required ar
 Pass all arguments directly:
 
 ```bash
-./generate.sh "My Awesome App" 1.0.0 com.kylewbanks.AwesomeApp https://kylewbanks.com/AwesomeApp.ipa ~/dist/AwesomeApp.plist
+./generate-plist.sh "My Awesome App" 1.0.0 com.kylewbanks.AwesomeApp https://kylewbanks.com/AwesomeApp.ipa ~/dist/AwesomeApp.plist
 ```
 
 Allow the script to prompt:
 
 ```bash
-./generate.sh 
+./generate-plist.sh 
 title: My Awesome App
 bundle-version: 1.0.0
 bundle-identifier: com.kylewbanks.AwesomeApp
