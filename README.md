@@ -1,6 +1,6 @@
 # iOS Enterprise Distribution P-List Generator
 
-Since Xcode 6, enterprise distribution has no longer generated the required P-List for distributing your iOS application. This tool handles generating it for you, and can be easily used as part of your Continous Integration process when automating builds.
+Since Xcode 6, enterprise distribution has no longer generated the required P-List for distributing your iOS application. This tool handles generating it for you, and can be easily used as part of your Continuous Integration process when automating builds.
 
 ## Options
 
