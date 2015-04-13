@@ -84,7 +84,7 @@ read -r -d '' PLIST << EndOfPlist
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>$BUNDLE_IDENTIFER</string>
+				<string>$BUNDLE_IDENTIFIER</string>
 				<key>bundle-version</key>
 				<string>$BUNDLE_VERSION</string>
 				<key>kind</key>
