@@ -63,11 +63,18 @@ then
     read -p "url: " URL
 fi
 
+IMG=$5
+if [ -z "${IMG}" ]
+then
+    read -p "url: " IMG
+fi
+
+
 # Generate the P-List
 read -r -d '' PLIST << EndOfPlist
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd …>
+<plist version=1.0>
 <dict>
 	<key>items</key>
 	<array>
@@ -79,6 +86,18 @@ read -r -d '' PLIST << EndOfPlist
 					<string>software-package</string>
 					<key>url</key>
 					<string>$URL</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>url</key>
+					<string>$IMG</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>url</key>
+					<string>$IMG</string>
 				</dict>
 			</array>
 			<key>metadata</key>
@@ -99,7 +118,7 @@ read -r -d '' PLIST << EndOfPlist
 EndOfPlist
 
 # Determine what to do with the P-List (Output to console or write to file)
-OUTPUT=$5
+OUTPUT=$6
 if [ -z "${OUTPUT}" ]
 then
 	echo "$PLIST"
